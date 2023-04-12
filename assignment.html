@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> </title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        /* padding: 10px; */
+      }
+      body {
+        background-image: linear-gradient(100deg, #176788, #158867);
+        font-family: "Roboto", sans-serif;
+      }
+      nav {
+        text-align: center;
+        font-size: xx-large;
+        color: aliceblue;
+        text-align: center;
+      }
+
+      #BOX {
+        border-radius: 10px;
+        width: 60%;
+        height: 80%;
+        background-image: linear-gradient(100deg, #093c4d, #03473a);
+        padding-left: 60px;
+        padding-right: 40px;
+        margin: auto;
+      }
+      h1 {
+        color: #ffffff;
+        text-align: center;
+        font-size: x-large;
+        padding-top: 30px;
+      }
+      h4 {
+        color: #767676;
+        text-align: center;
+        font-size: large;
+        font-weight: 200;
+      }
+      p {
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+      }
+      form input {
+        width: 90%;
+        height: 40px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+      }
+      form {
+        margin-left: 20px;
+      }
+
+      form label {
+        display: flex;
+        margin-top: 30px;
+        font-size: 18px;
+      }
+      input[type="checkbox"] {
+        width: 40%;
+        height: 15px;
+      }
+      input[type="button"] {
+        margin-top: 20px;
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+      }
+      #FP {
+        padding-left: 40vh;
+        font-size: 15px;
+        text-decoration: none;
+      }
+      .link {
+        text-decoration: none;
+      }
+      #check {
+        /* padding-left: 50px; */
+        font-size: 15px;
+        background-color: #ffffff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>Login form using HTML and CSS</nav>
+    <div id="BOX">
+      <h1>Sign in</h1>
+      <h4>Sign in with your username and password</h4>
+      <form>
+        <label>Your username</label>
+
+        <input type="text" placeholder="Enter Username" />
+
+        <label>Your password</label>
+        <input type="password" placeholder="Enter Password" />
+        <div id="check">
+          <input type="checkbox" />Remember me
+          <a id="FP" href="#">Forgot Password?</a>
+        </div>
+        <input type="button" value="Login" />
+
+        <center>
+          <p>Not a member? <a class="link" href="#">Register here!</a></p>
+        </center>
+      </form>
+    </div>
+  </body>
+</html>
