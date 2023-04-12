@@ -5,9 +5,15 @@ body{
 }
 .container{
 background-image: linear-gradient(80deg,#093C4D,#03473A);
-width: 60%;
+width: 50%;
 margin: auto;
 align-items: center;
+border-radius: 6px;
+padding-left: 30px;
+padding-right: 30px;
+}
+h1{
+    text-align: center;
 }
 /* 
 git add .
