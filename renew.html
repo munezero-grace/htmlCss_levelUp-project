@@ -1,33 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+<html>
+  <head>
     <link rel="stylesheet" href="./html/renew.css" />
-  </head>
-  <body>
-    <h1><nav>Login form using HTML and CSS</nav></h1>
-    <div class="container">
-      <h2>Sign in</h2>
-      <h4>Sign in with your username and password</h4>
-      <div class="box">
-        <label>Your username</label><br />
-        <div class="username">
-          <input class="r1" type="text" placeholder="Enter username" />
+
+    <body>
+      <h1>Login form using HTML and CSS</h1>
+      <div id="box1">
+        <div id="header">
+          <h2 id="signin">sign in</h2>
+          <p id="title1">sign in with your user name and password</p>
         </div>
-        <label>Your password</label>
-        <div class="password">
-          <input class="r2" type="password" placeholder="Enter password" />
+        <form>
+          <p id="yourusername">your username</p>
+          <input type="text" placeholder="Enter username" id="b1" />
+          <p id="yourpass">your password</p>
+          <input type="password" placeholder="Enter password" id="password" />
+          <div>
+            <div id="left">
+              <input type="checkbox" id="check" />
+              <label for="rememberme">Remember me</label>
+            </div>
+            <div>
+              <a id="forgotpassword" href="#">Forgot Password?</a>
+            </div>
+          </div>
+        </form>
+
+        <div>
+          <button>Login</button>
         </div>
-        <div class="check">
-          <input class="c1" type="checkbox" />Remember me
-          <h5><a href="#">Forgot password</a></h5>
+        <div id="register">
+          <p>
+            Not a member?
+            <a id="account" href="#">register here!</a>
+          </p>
         </div>
-        <div class="login"><input type="button" value="Login" /></div>
       </div>
-      <div class="register">Not a member?<a href="#">Register here!</a></div>
-    </div>
-  </body>
+    </body>
+  </head>
 </html>
