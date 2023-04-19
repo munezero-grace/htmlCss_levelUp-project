@@ -68,8 +68,16 @@ header{
     text-align: center;
     padding-top: 30px;
 
+}
 
-   
+header .icons i{
+font-size: 15px;
+margin: 15px 5px 30px 5px ;
+
+}
+header .icons i:hover{
+background-color: rgb(9, 152, 248);
+
 }
 header .circle .names{
     font-size: medium;
@@ -78,9 +86,8 @@ header .circle .names{
 header .navBar{
     width: 100%;
 }
-header .navBar ul{
+header .navBar ul li{
     list-style: none;
-    /* padding-left:150px; */
     top: 10px;
 }
 header .navBar ul li a{
@@ -89,8 +96,8 @@ header .navBar ul li a{
     /* margin:1.5rem 0; */
     color: white;
 }
-header .navBar ul li a:hover{
-    background-color: rgb(9, 152, 248);
+header .navBar ul li:hover{
+    background-color: rgb(251, 255, 0);
 }
 body .profile{
     width: 90rem;
@@ -102,8 +109,13 @@ float: right;
 
 
 }
-/* 
+
 .copyright{
     font-size: larger;
     font-weight: bolder;
-} */
+}
+nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
