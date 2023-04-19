@@ -1,4 +1,9 @@
+:root{
+    background-color: rgb(0, 0, 0);
+    color: aqua;
+}
 *{
+    font-family: 'unito' , sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,6 +11,7 @@
     border: none;
     text-transform: capitalize;
     transition: all .2s linear;
+    color: white;
 
 }
 *::selection{
@@ -20,13 +26,12 @@ html{
 html ::-webkit-scrollbar{
     width: 1.4rem;
 
-
 }
-html ::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track{
 
-   background-color: rgb(88, 77, 77);
+   background-color: rgb(255, 3, 3);
 }
-html ::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb{
 
  background-color: rgb(231, 231, 19);
 }
@@ -36,14 +41,8 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
-.myphoto{
-   width: 20%;
-   height:80px;
-   display: flex;
-   justify-content: start;
-   margin:  20px;
-}
-img{
+
+header .circle img{
    
     border-radius: 50px;
     width: 100px;
@@ -57,16 +56,20 @@ img{
 }
 header{
     position: fixed;
-    /* top: 0;left: 0; */
+    top: 0;left: 0;
     /* z-index: 1000; */
     width: 35rem;
     height: 100%;
-    background-color: rgb(122, 122, 122);
+    background-color: black;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
-    /* text-align: center; */
+    text-align: center;
+    padding-top: 30px;
+
+
+   
 }
 header .circle .names{
     font-size: medium;
@@ -77,7 +80,7 @@ header .navBar{
 }
 header .navBar ul{
     list-style: none;
-    padding-left:150px;
+    /* padding-left:150px; */
     top: 10px;
 }
 header .navBar ul li a{
@@ -89,3 +92,18 @@ header .navBar ul li a{
 header .navBar ul li a:hover{
     background-color: rgb(9, 152, 248);
 }
+body .profile{
+    width: 90rem;
+    height: 900px;
+display: flex;
+justify-content: center;
+align-items: end;
+float: right;
+
+
+}
+/* 
+.copyright{
+    font-size: larger;
+    font-weight: bolder;
+} */
