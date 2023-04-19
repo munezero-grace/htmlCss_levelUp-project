@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    background-color: blanchedalmond;
+}
+.container{
+    background-color: blueviolet;
+}
+.navigation{
+    padding: 20px;
+    padding-right: 40px;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: end;
+}
+a{
+    color: white;
+}
+.navigation > ul{
+    display: flex;
+}
+.navigation > ul> li{
+    list-style: none;
+    padding-left: 10px;
+}
