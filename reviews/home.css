@@ -44,6 +44,7 @@ a{
                           "first third third third sixth sixth sixth sixth sixth seventh";
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: repeat(10, 10%);
+    grid-gap: 7px;
     
 }
 .one{

@@ -1,121 +1,92 @@
-:root{
-    background-color: rgb(0, 0, 0);
-    color: aqua;
-}
 *{
-    font-family: 'unito' , sans-serif;
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
+    padding: 0;
     text-transform: capitalize;
-    transition: all .2s linear;
-    color: white;
-
-}
-*::selection{
-    background-color: rgb(255, 255, 7);
-    color: rgb(78, 26, 126);
-
-}
-html{
-    font-size: 62.5%;
-    overflow: hidden;
-}
-html ::-webkit-scrollbar{
-    width: 1.4rem;
-
-}
-html::-webkit-scrollbar-track{
-
-   background-color: rgb(255, 3, 3);
-}
-html::-webkit-scrollbar-thumb{
-
- background-color: rgb(231, 231, 19);
-}
-
-body{
-    background-color:black;
-    width: 100%;
+    text-decoration: none;
+    box-sizing: border-box;
+    z-index: 1000;
     overflow-x: hidden;
 }
-
-header .circle img{
-   
-    border-radius: 50px;
-    width: 100px;
-    height: 100px;
-    /* position: relative; */
-    left: 10px;
-    top: 10px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 9px solid #36444D;
-}
-header{
-    position: fixed;
-    top: 0;left: 0;
-    /* z-index: 1000; */
-    width: 35rem;
+body{
+    background-color: rgb(179, 179, 24);
+    /* color: white; */
     height: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    background-color: rgb(6, 66, 80);
+    grid-template-areas: "third third third second second second second second second second"
+                         "third third third second second second second second second second"
+                         "third third third second second second second second second second"
+                         "third third third second second second second second second second"
+                         "first first first second second second second second second second"
+                         "first first first second second second second second second second"
+                         "first first first second second second second second second second"
+                         "first first first second second second second second second second"
+                         "first first first second second second second second second second"
+                         "fourth fourth fourth second second second second second second second";
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+}
+.navigation{
+    background-color: rgb(0, 0, 0);
+    grid-area:first;
+    display: block;
+    justify-content: center;
+    /* align-items: center; */
     text-align: center;
+    padding: 15px;
     padding-top: 30px;
 
 }
-
-header .icons i{
-font-size: 15px;
-margin: 15px 5px 30px 5px ;
-
+.navigation ul li{
+list-style: none;
+padding: 15px;
 }
-header .icons i:hover{
-background-color: rgb(9, 152, 248);
-
-}
-header .circle .names{
-    font-size: medium;
+.navigation ul li a{
     color: white;
 }
-header .navBar{
-    width: 100%;
-}
-header .navBar ul li{
-    list-style: none;
-    top: 10px;
-}
-header .navBar ul li a{
-    display: block;
-    padding: 1rem;
-    /* margin:1.5rem 0; */
-    color: white;
-}
-header .navBar ul li:hover{
-    background-color: rgb(251, 255, 0);
-}
-body .profile{
-    width: 90rem;
-    height: 900px;
-display: flex;
-justify-content: center;
-align-items: end;
-float: right;
+.navigation li a:hover{
+transition: 0.3s;
+color: #FFE814;
+margin-left: 20px;
+
+
+
 
 
 }
-
 .copyright{
-    font-size: larger;
-    font-weight: bolder;
+    color: rgb(97, 255, 6);
+    grid-area: fourth;
+    padding-bottom: 30px;
+    text-transform: capitalize;
 }
-nav ul li{
+.content{
+    background-color: aqua;
+    grid-area: second;
+
+}
+.content img{
+    width:100%;
+    
+
+}
+
+.profile{ 
+    background-color: rgb(227, 59, 163);
+    grid-area: third;
+
+}
+.profile img{
     display: flex;
     justify-content: center;
     align-items: center;
+    place-items: center;
+    width: 30%;
+    border-radius: 15rem;
+    border: 10px solid#36444D;
+    top: 15px;
+    
 }
