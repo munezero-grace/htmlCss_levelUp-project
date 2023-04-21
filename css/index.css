@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: initial;
+    text-decoration: none;
+    box-sizing: border-box;
+    z-index: 1000;
+    overflow-x: hidden;
+}
+body{
+    background-color: rgb(179, 179, 24);
+    height: 100%;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    /* background-color: rgb(6, 66, 80); */
+    grid-template-areas: "third third third second second second second second second second"
+                         "third third third second second second second second second second"
+                         "third third third second second second second second second second"
+                         "third third third second second second second second second second"
+                         "first first first second second second second second second second"
+                         "first first first second second second second second second second"
+                         "first first first second second second second second second second"
+                         "first first first second second second second second second second"
+                         "first first first second second second second second second second"
+                         "fourth fourth fourth second second second second second second second";
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+}
+.navigation{
+    background-color: rgb(0, 0, 0);
+    grid-area:first;
+    display: block;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    padding: 15px;
+    padding-top: 30px;
+
+}
+.navigation ul li{
+list-style: none;
+padding: 15px;
+letter-spacing: 1px;
+}
+.navigation ul li a{
+    color: white;
+}
+.navigation li a:hover{
+transition: 0.3s;
+color: #FFE814;
+margin-left: 20px;
+}
+.copyright{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    grid-area: fourth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content{
+    background-image: url(/images/grace.jpg.jpeg);
+    grid-area: second;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.profile{ 
+    background-color: rgb(0, 0, 0);
+    grid-area: third;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(6,fr);
+    grid-template-areas: "pp pp pp pp pp"
+                         "pp pp pp pp pp"
+                         "pp pp pp pp pp"
+                         "pp pp pp pp pp"
+                         "name name name name name"
+                         "icons icons icons icons icons";
+
+}
+.myPicture{
+    background-color: rgb(0, 0, 0);
+    grid-area: pp;
+    display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
+.myName{
+    background-color: rgb(0, 0, 0);
+    grid-area: name;
+    display: flex;
+justify-content: center;
+/* align-items: center; */
+color: white;
+
+}
+.myIcons{
+    background-color: rgb(0, 0, 0);
+    grid-area:icons;
+    display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+
+}
+.myIcons i{
+    padding-left: 10px;
+}
+.profile img{
+    width: 40%;
+    border: 10px solid#405b6c;
+ 
+    border-radius: 20rem;
+    /* top: 15px; */
+    
+}
+.animation{
+    display: inline-flex;
+    
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.animation .static-text{
+    font-size: 60px;
+    font-weight: 400;
+    color: #fff;
+}
+.animation .dynamic-text{
+    margin-left: 30px;
+    line-height: 84px;
+    height: 80px;
+    overflow: hidden;
+}
+.animation .dynamic-text li{
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    color: #FFE814;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4)  infinite;
+}
+@keyframes slide{
+    100%{
+       top: -360px;
+    }
+}
+.animation .dynamic-text li span{
+    position: relative;
+}
+.animation .dynamic-text li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color:  rgb(7, 108, 108);
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid #FFE814;
+    animation: typing 1.5s steps(10)  infinite;
+}
+@keyframes typing{
+    100%{
+        left:100%;
+        margin-left:0 -35px 0 35px;
+    }
+}
