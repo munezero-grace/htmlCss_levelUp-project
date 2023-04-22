@@ -14,7 +14,6 @@ body{
 .container{
     height: 100vh;
     display: grid;
-    /* background-color: rgb(6, 66, 80); */
     grid-template-areas: "third third third second second second second second second second"
                          "third third third second second second second second second second"
                          "third third third second second second second second second second"
@@ -28,15 +27,67 @@ body{
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: repeat(10, 10%);
 }
+.profile{ 
+    background-color: rgb(0, 0, 0);
+    grid-area: third;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(6,fr);
+    grid-template-areas: "pp pp pp pp pp"
+                         "pp pp pp pp pp"
+                         "pp pp pp pp pp"
+                         "pp pp pp pp pp"
+                         "name name name name name"
+                         "icons icons icons icons icons";
+
+}
+.myPicture{
+    background-color: rgb(0, 0, 0);
+    grid-area: pp;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myPicture img {
+    width: 40%;
+    border: 10px solid#405b6c;
+    border-radius: 20rem;
+}
+.myName{
+    background-color: rgb(0, 0, 0);
+    grid-area: name;
+    display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+
+}
+.myIcons{
+    background-color: rgb(0, 0, 0);
+    grid-area:icons;
+    display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+
+}
+.myIcons i{
+    padding-left: 10px;
+}
+.myIcons i:hover{
+    color:  #FFE814;
+}
+
 .navigation{
     background-color: rgb(0, 0, 0);
     grid-area:first;
     display: block;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     text-align: center;
     padding: 15px;
     padding-top: 30px;
+    min-height: 100vh;
 
 }
 .navigation ul li{
@@ -59,7 +110,6 @@ margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 .content{
     background-image: url(/images/grace.jpg.jpeg);
@@ -70,57 +120,6 @@ margin-left: 20px;
 
 }
 
-.profile{ 
-    background-color: rgb(0, 0, 0);
-    grid-area: third;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(6,fr);
-    grid-template-areas: "pp pp pp pp pp"
-                         "pp pp pp pp pp"
-                         "pp pp pp pp pp"
-                         "pp pp pp pp pp"
-                         "name name name name name"
-                         "icons icons icons icons icons";
-
-}
-.myPicture{
-    background-color: rgb(0, 0, 0);
-    grid-area: pp;
-    display: flex;
-justify-content: center;
-align-items: center;
-color: white;
-}
-.myName{
-    background-color: rgb(0, 0, 0);
-    grid-area: name;
-    display: flex;
-justify-content: center;
-/* align-items: center; */
-color: white;
-
-}
-.myIcons{
-    background-color: rgb(0, 0, 0);
-    grid-area:icons;
-    display: flex;
-justify-content: center;
-align-items: center;
-color: white;
-
-}
-.myIcons i{
-    padding-left: 10px;
-}
-.profile img{
-    width: 40%;
-    border: 10px solid#405b6c;
- 
-    border-radius: 20rem;
-    /* top: 15px; */
-    
-}
 .animation{
     display: inline-flex;
     
@@ -167,8 +166,8 @@ color: white;
     top: 0;
     background-color:var(--bg-black-900);
     width: 100%;
-    height: 100%;
-    border-left: 2px solid #FFE814;
+    /* height: 100%; */
+    /* border-left: 2px solid #FFE814; */
     animation: typing 1.5s steps(10)  infinite;
 }
 @keyframes typing{
@@ -181,8 +180,23 @@ color: white;
 
 
 
-/* #Home{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #Home{
     background-color: aqua;
     width: 100%;
     min-height: 100vh;
-} */
+    
+}
