@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    text-transform: initial;
+    text-transform: capitalize;
     text-decoration: none;
     box-sizing: border-box;
     z-index: 1000;
@@ -254,7 +254,7 @@ margin-left: 20px;
 #about {
     padding: 72px 0;
     color:var(--mainText__color);
-    background-color: rgb(164, 181, 181);
+    background-color: rgb(230, 249, 249);
   }
   
 #about h2.titleBackground {
