@@ -252,58 +252,48 @@ margin-left: 20px;
 --------------------------------------------------------------*/
  
 #about {
+  width:100%;
+  height: 100vh;
     padding: 72px 0;
     color:var(--mainText__color);
-    background-color: rgb(230, 249, 249);
+    background-color: rgb(164, 179, 179);
   }
   
-#about h2.titleBackground {
+#about h2.aboutcontactTitleBackground{
     position: relative;
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
-    /* font-size: 95px; */
-    font-size: calc(50px + 3vw);
+    font-size: 95px;
+    /* font-size: calc(50px + 3vw); */
     font-weight: 600;
     color: rgba(222, 227, 228, 0.5);
   }
   
-  .textInside {
+  .aboutportfolioText__overlap{
     position: absolute;
     top: 33%;
     width: 100%;
     color: purple;
     text-transform: capitalize;
-    /* font-size: 36px; */
-    font-size: calc(30px + 0.3vw);
-  }
-  
-  .textInside::after {
-    display: block;
-    content: "";
-    width: 6%;
-    height: 3px;
-    background: var(--button__color);
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    /*To make it at the center exactly without counting the size of the Element*/
-    transform: translate(-50%, 0);
-  }
+    font-size: 36px;
+    
+    }
   
   .about__desc {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
   }
   
   .about__table,
   .about__parag {
     margin-top: 48px;
-    padding: 0 12px;
+    padding:12px;
   }
   
   .about__parag {
-    max-width: 60%;
+    max-width: 50%;
   }
   
   .about__title {
@@ -323,7 +313,7 @@ margin-left: 20px;
   .about__table ul {
     height: auto;
     list-style: none;
-    /* list-style-type: none; */
+    list-style-type: none;
     color: var(--mainText__color);
     font-size: 16px;
     margin-bottom: 50px;
@@ -346,14 +336,11 @@ margin-left: 20px;
     cursor: context-menu;
   }
   .button--active {
-    /* text-decoration: none; */
-    cursor: pointer;
+
     color: var(--white__color);
     background-color: yellow;
     border: none;
-    padding: 12.8px 41.6px;
-    font-size: 16px;
-    box-shadow: 0px 5px 15px rgba(166, 18, 164, 0.15);
+    padding: 18px 28px;
     border-radius: 800px;
     transition: 1s ease;
   }
@@ -372,17 +359,17 @@ margin-left: 20px;
   
   .number__data {
     border-right: 1px dotted #eaeaea;
-    padding: 20px 12px;
+    padding: 20px 23px;
     text-align: center;
   }
   
   .number__data:last-child {
-    border-right: unset;
+    border-right: none;
   }
   
   .aboutData__number {
     color: var(--number__color);
-    font-size: 46px;
+    font-size: 45px;
     font-weight: 500;
   }
   
@@ -391,6 +378,10 @@ margin-left: 20px;
     font-size: 16px;
   }
   
+  .aboutData__number,
+  .aboutData__desc {
+    padding: 3px 0;
+  }
 
 
 
@@ -406,50 +397,68 @@ margin-left: 20px;
 
 /*******************************************Services Section*****************************************/
 #service {
-    background-color: #f8f9fa;
+    background:linear-gradient(to right, #f5e0f8, #f8f9da);
     padding: 72px 0;
+    width: 100%;
+    min-height: 100vh;
   }
+  .servicecontactTitleBackground{
+    position: relative;
+    font-size: 96px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgba(172, 172, 172, 0.5);
+    transition: 0ms;
+  }
+  .serviceportfolioText__overlap{
+    position: absolute;
+    font-size: 36px;
+    color: purple;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+  }
+
   
   .service__row,
-  .services__card,
-  .card__icon {
+  .services__box,
+  .services__icon {
     display: flex;
   }
   
   .services__cards {
-    flex-direction: column;
+    column-count: 1;
   }
   
   .service__row {
-    width: 90%;
+    width: 100%;
     margin: auto;
+   
   }
   
-  .services__cards {
-    width: 90%;
-    margin: 25px auto;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .services__card {
+  .services__box {
     width: calc(100% / 2);
     margin: 0 auto;
-    background-color: transparent;
-    justify-content: space-around;
-    align-items: flex-start;
     padding: 0 12px;
+   
   }
   
   .icon__container {
     padding: 0 20px 0 0;
+    border: 5px  dotted ;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
   }
   
-  .card__icon {
+  .services__icon {
     font-size: 30px;
     width: 70px;
     height: 70px;
-    color: var(--button__color);
+    color:purple;
     border-radius: 4px;
     background-color: var(--white__color);
     justify-content: center;
@@ -457,7 +466,7 @@ margin-left: 20px;
     box-shadow: 0 2px 4 rgba(0, 0, 0, 0.075);
   }
   
-  .card__data {
+  .services__data {
     width: 80%;
     margin-bottom: 48px;
   }
@@ -481,19 +490,164 @@ margin-left: 20px;
 
 
 
+
+
+
+
+
+  /**************************************************************************************************/
+
+/*******************************************Portfolio Section*****************************************/
+#portfolio {
+  width: 100%;
+  height:100vh;
+  background-color: #1d1e1e;
+  padding: 72px 0;
+  color: white;
+}
+  
+.contactTitleBackground {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size:96px;
+  font-weight: 600;
+  color: rgba(231, 231, 231, 0.5);
+  margin-bottom: 30px;
+}
+
+.portfolioText__overlap {
+  position: absolute;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  color: purple;
+  text-transform: capitalize;
+  font-size: 36px;padding-top: 45px;
+}
+
+.portfolio__nav {
+  list-style: none;
+  list-style-type: none;
+  color:#FFE814;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type__item a {
+  text-decoration: none;
+  padding:0 10px;
+  color:white;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.type__item a:hover {
+  color: #FFE814;
+}
+
+.item--active a {
+  color: var(--hoverButton__color);
+}
+
+.portfolio__gallery {
+  column-count: 3;
+  column-gap: 10px;
+  margin-top: 40px;
+}
+
+.photo__box {
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.gallery__photo {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.photo__box:hover .gallery__photo {
+  transform: scale(1.3);
+  filter: blur(2px);
+}
+
+.photo__box:hover > .project__desc {
+  display: block;
+}
+
+.project__desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: none;
+}
+
+.desc__container > h3 {
+  line-height:4;
+}
+
+.project__desc > div {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -58%);
+}
+
+
+
+
+
+
+
+
+
  
   /**************************************************************************************************/
   
   /*******************************************Contact Section*****************************************/
   
   #contact {
+    width: 100%;
+    height: 100vh;
     background-color: #f8f9fa;
     padding: 72px 0;
   }
+  .contactTitleBackground{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(231, 231, 231, 0.5); ;
+    font-weight: 600;
+    font-size: 106px;
+   
+
+
+  }
+  .contactText__overlap{
+    position: absolute;
+    font-size: 36px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    color: purple;
+    padding-top: 20px;
+
+  }
+  
   
   .contact__wrap {
-    max-width: 1000px;
-    margin: auto;
     display: flex;
     justify-content: space-evenly;
   }
@@ -501,30 +655,26 @@ margin-left: 20px;
   .contact__data,
   .contact__form {
     margin-top: 48px;
-    padding: 0 12px;
+    padding: 0 22px;
   }
   
   .contact__form {
-    max-width: 100%;
     flex-grow: 1.5;
     color: var(--mainText__color);
     font-weight: 600;
   }
   
   .contact__form input {
-    /* width: calc((98.5% / 2) - 24px ); */
-    width: calc((90%) / 2) ;
-    margin: 24px 12px 0 12px;
-    /* margin-top: 24px; */
+    width: 15.8rem;
+    margin: 24px 12px 15px;
   }
   
-  .text__container {
-    margin: 5px auto 10px auto;
+  .message__container {
+    margin: 5px 0 10px 0;
   }
   
-  .text__container > textarea {
-    width: calc(90% + 28px);
-    margin: 12px 12px;
+  .message__container > textarea {
+    width: 33.5rem;
   }
   
   ::placeholder {
@@ -557,62 +707,39 @@ margin-left: 20px;
   }
   
   .address__icon {
-    color: var(--button__color);
+    color: purple;
   }
   
   .follow__icons {
     cursor: pointer;
     list-style: none;
     list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  
   }
   
   .follow__item {
-    color: var(--button__color);
+    color:rgb(5, 5, 32);
     transition: 1s ease-in;
-    padding: 0 5px;
+    padding: 0 10px 0 0px;
     position: relative;
-  }
-  
-  .follow__item .tooltiptext__fb,
-  .follow__item .tooltiptext__tw,
-  .follow__item .tooltiptext__gh,
-  .follow__item .tooltiptext__dr,
-  .follow__item .tooltiptext__go {
-    visibility: hidden;
-    width: 80px;
-    background-color: var(--black__color);
-    color: var(--white__color);
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    font-size: 12px;
-    /* Position the tooltip */
-    position: absolute;
-    top: 100%;
-    z-index: 1;
-  }
-  
-  .follow__item:hover .tooltiptext__fb,
-  .follow__item:hover .tooltiptext__tw,
-  .follow__item:hover .tooltiptext__gh,
-  .follow__item:hover .tooltiptext__go,
-  .follow__item:hover .tooltiptext__dr{
-    visibility: visible;
+    display: inline;
+    justify-content: start;
+    align-items: start;
   }
   
   .follow__item:hover {
-    color: var(--hoverButton__color);
+    color: #FFE814;
+   transition: 1ms ease-out;
   }
   
-  .contact__form .contactData__title {
+  .contactData__title {
     padding-left: 12px;
   }
   
   .form__input {
-    padding: 13px 15.3px;
+    position: relative;
+    padding: 13px 10px;
     border: 1px solid #ced4da;
     color: #656565;
     font-size: 16px;
@@ -627,28 +754,43 @@ margin-left: 20px;
   }
   
   .form__button {
+    position: relative;
     text-decoration: none;
     cursor: pointer;
-    background-color: var(--button__color);
-    color: #fff;
+    background-color: #FFE814;
+    color:black;
     border: unset;
-    padding: 12.8px 41.6px;
+    padding: 15px 20px;
     font-size: 16px;
-    border-radius: 800px;
+    border-radius: 40px;
     transition: 1s ease;
   }
   
   .send__button {
     text-align: center;
-    width: 100%;
-  }
+    margin-right: 8rem;
   
+  }
   .send__button a {
-    margin: 20px 5px;
+    position: absolute;
+    justify-content: center;
+
+    
   }
   
   .form__button:hover {
-    background-color: var(--hoverButton__color);
+    background-color:purple;
     color: var(--white__color);
+    transition: 1.1ms ease;
+    cursor: pointer;
   }
+  
+
+
+
+
+
+
+
+
   
