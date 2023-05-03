@@ -1,0 +1,16 @@
+.body{
+    background-color: rgb(78, 78, 190);
+    color: blueviolet;
+}
+
+#btn{
+    background-color: blueviolet;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#btn:hover{
+    background-color: rgb(32, 4, 59);
+    padding: 10px 15px;
+}

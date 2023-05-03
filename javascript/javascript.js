@@ -1,3 +1,19 @@
+/*
+1.basics of javascript(declation....)
+2.arrays and objects
+3.functions
+4.higher order functions(filter, map)
+5.looping
+6.conditional statements
+7.DOM(document Object Model)
+
+*/
+
+
+
+
+
+
 //string concactination
 //variable declaration
 //let,const
@@ -45,51 +61,16 @@
 //     console.log("number not in range");
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // calling a function     funstionName();
-
-
 //syntax for a function     let display=()=>{}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // let numArray = [ "one", "two", "three", "four","five"];
-
 // let num=1;
 // if(num < numArray.length){
 //     console.log("number is in range");
 
 // console.log(num[numArray])}
-
-
-
-
-
-
-
 
 // function testMe(num){
 //     if (num<5){
@@ -156,26 +137,110 @@
 
 //using switch case statement
 
-function checkResult(grading){
-    display="";
+// function checkResult(grading){
+//     display="";
 
 
-    switch(grading){
+//     switch(grading){
 
-        case "F":
-            display="Failed test"
-            break;
-        case "B":
-            display="passed a test"
-            break;
-        case "A":
-            display="nailed it"
-            break;
-        default:
-            display="redo"
-    }
-    return display;
+//         case "F":
+//             display="Failed test"
+//             break;
+//         case "B":
+//             display="passed a test"
+//             break;
+//         case "A":
+//             display="nailed it"
+//             break;
+//         default:
+//             display="redo"
+//     }
+//     return display;
+// }
+/*
+syntax error 
+runtime error
+logic error
+*/
+// built in functions
+// higher order function:
+// i++ /// i = i + 1
+// unit testing
+// higher order functions : filter,map
+// console.log(checkResult("B"));
+// call back functions
+// objects
+/*
+
+let/const objectname = {
+property: value,
+property: value,
 }
 
 
-console.log(checkResult("B"));
+// filter**************************************************
+
+*/
+// let fullName = {
+// "firstName": "axcel",
+// "age": 20 
+// }
+// let objectArray = [{ "firstName": "axcel","age": 20  }, { "firstName": "edith","age": 17 }, { "firstName": "kanyana","age": 18  }, { "firstName": "grace","age": 16  }]
+// // console.log()
+// console.log("Element", objectArray[objectArray.length -1].age);
+// // console.log("full names:", fullName.age);
+// // console.log("first name", fullName.firstName);
+
+// // let students = [1,2,3,4,5,6,5,3];
+// let studentsNames = [{"firstName":"Axel", "age":20},{"firstName":"kanyana", "age":17},{"firstName":"grace", "age":23},{"firstName":"edith", "age":21}];
+
+// // let filteredArray = students.filter((item) => item === 5);
+// let filteredStudents = studentsNames.filter((item) => item.age === 7);
+// console.log("the filtered student is:" , filteredStudents );
+
+
+// console.log("array of names:", filteredStudents);
+// console.log("length of filtered students" , filteredStudents.length);
+
+// if(filteredStudents.length > 0){
+//     console.log("item is found");
+//     console.log(filteredStudents[0])
+// }else{
+//     console.log("item is not found");
+// }
+
+
+// console.log("filtered array:", filteredArray);
+
+// for(let i = 0; i < 4; i++){
+// console.log("value i:",i);
+// console.log("i am in");
+// }
+// console.log("above function")
+// let displayArray = (number) =>{
+// return number;
+// }
+
+// console.log("below function")
+
+// console.log(displayArray(students));
+
+// console.log("hi there......................");
+
+
+//map ******************************************************************
+
+// let arrayNumbers = ["ndizihiwe", "nyiransengimana", "munezero", "kanyana"];
+// let array = [1,2,3,4,5,6,7,8];
+
+// // call back function
+// //  filter=================================================================
+// // let finalArray = arrayNumbers.filter((item) => item === item);
+// // console.log("array of numbers:", arrayNumbers);
+// // console.log("final Array is:",finalArray)
+// let mapedArray = arrayNumbers.map((item) => item === item);
+// console.log("mapedArray is:", mapedArray)
+
+
+
+
