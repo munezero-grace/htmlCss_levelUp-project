@@ -1,25 +1,28 @@
 // ------------------------------dom-------------------------------------------------------
+// click
+let fName = document.getElementById("firstName");
+let sName = document.querySelector(".secondName");
+let button = document.querySelector("#btn")
+// console.log("fname", fName);
+// console.log("secondName", sName);
+// console.log("button", button);
+/*
+json = [{},{}]
+json = {}
+*/
+let arrayStudents = JSON.parse(localStorage.getItem("the array:"));
 
-let buttonHolder = document.getElementById("btn");
-let firstName = document.getElementById("firstName");
-let secondName = document.getElementById("secondName");
-let myNames = 'grace munezero';
-
-console.log("buttonHolder",buttonHolder);
-// console.log(`renjiskbfhvbdsjk ${myNames}`)
-// eventListener
-let array = [];
-buttonHolder.addEventListener('click', (event) => {
-    let person = {
-        firstname:firstName.value,
-        secondname:secondName.value
-    }
-    event.preventDefault();
-    console.log(person);
-    array.push(person);
-    console.log("array:" , array);
-    // console.log("i am clicked");
-    // console.log("first name:", firstName.value);
-    // console.log("second name:", secondName.value);
-})
-
+// console.log("actual array",arrayStudents);
+// console.log("item at index?", arrayStudents[0]);
+button.addEventListener('click', (e) =>{
+e.preventDefault();
+console.log("fname", fName.value);
+console.log("sName", sName.value);
+let student = {
+    firstName: fName.value,
+    secondName: sName.value
+}
+arrayStudents.push(student);
+localStorage.setItem("the array:", JSON.stringify(arrayStudents));
+console.log("person", arrayStudents);
+});
