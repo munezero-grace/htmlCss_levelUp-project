@@ -1,0 +1,76 @@
+*{
+   margin:0;
+   padding:0;
+}
+body{
+    background-image: url('../images/luca-tosoni-OZ5oT-45vLw-unsplash.jpg');
+    /* width:100%; */
+}
+.Flat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    margin: 10px 0;
+}
+#box {
+    width: 30%;
+    min-height: 30vh;
+    margin-left: 22rem;
+    margin-top: 2rem;
+    width: 40%;
+    padding:40px 20px;
+    background-color: hsl(242, 93%, 5%);
+    color: white;
+}
+
+
+
+.rectangle{
+    width: 25rem;
+    height:30px;
+    padding:5px 5px;
+    margin: 15px 0;
+    margin-left: 25px;
+    border: 2px solid white;
+    border-radius: 4px;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+.text{
+   margin-left: 7rem;
+   margin-top: 3px;
+}
+#btn .button{
+    width: 25rem;
+    padding: 5px;
+    margin-top: 1.5rem;
+    margin-left:2rem;
+    border-radius: 4px;
+    background-color: rgb(36, 108, 201);
+    color: white;
+}
+.follow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+}
+.icons{
+    list-style: none;
+    display:inline;
+    padding:0 5px;
+}
+
+.footer{
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 28rem;
+    margin-bottom: 15px;
+}
+
