@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h2>SIGNIN FORM</h2>
+      <form  id="form" role="form" onsubmit="signIn(event);" autocomplete="off">
+        <div class="form-group">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            name="pwd"
+            id="pwd"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <button type="submit">Sign In</button>
+        </div>
+      </form>
+      <p>Don't have an account? <a href="/signup3.html">Sign Up</a> here</p>
+    </main>
+
+    <script>
+        let form=document.getElementById('form')
+
+        if(localStorage.setItem('email') && localStorage.setItem('password')){
+
+          document.getElementById('email').value=localStorage.getItem('email');
+          document.getElementById('password').value=localStorage.getItem('password');
+          
+        }
+         
+        form.addEventListener('submit',(e)=>{
+          e.preventDefault();
+          email=document.getElementById('email').value;
+          password=document.getElementById('pwd').value;
+
+          //local storage
+
+
+          localStorage.setItem("email address is:",email);
+          localStorage.setItem("password is:",password);
+
+          alert('yours data is saved in local storage')
+        })
+    </script>
+  </body>
+</html>

@@ -10,13 +10,19 @@
   <body>
     <div class="Flat"><p>Flat Signup Form</p></div>
     <div id="box">
+    <div class="result"></div>
       <form>
-        <input type="text" placeholder="Realname" class="rectangle" /><br />
-        <input type="text" placeholder="Username" class="rectangle" /><br />
-        <input type="password" placeholder="Password" class="rectangle" /><br />
+        <p id="fNameComment" style="color: red"></p>
+        <input type="text" placeholder="Firstname" id="fName" class="rectangle" /><br />
+        <p id="lNameComment" style="color: red"></p>
+        <input type="text" placeholder="Lastname" id="lName" class="rectangle" /><br />
+        <p id="emailComment" style="color: red"></p>
+        <input type="email" placeholder="Email" id="email" class="rectangle" /><br />
+        <p id="passwordComment" style="color: red"></p>
         <input
           type="password"
-          placeholder="Confirm Password"
+          placeholder="Password"
+          id="pswd"
           class="rectangle"
         /><br />
         <p class="text">By clicking signup, i agree to your terms</p>
@@ -36,7 +42,8 @@
     </div>
     <br />
     <p class="footer">
-      @2023 Flat Signup form.All rights reserved I Design by W3layouts
+     All ready have an account?<span><a href="login.html">Login Here</a></span>
     </p>
+    <script src="./javascript/signup.js"></script>
   </body>
 </html>
