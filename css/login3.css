@@ -2,12 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
-    
- }
- #container{
-    position: relative;
-    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+#container{
+    width: 100;
     min-height: 100vh;
     background:linear-gradient(rgba(0,0,0,0.1),#000000), url(/pictures/comp.jpg);
     background-position: center;
@@ -15,12 +13,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
- }
- .box{
+}
+.box{
     position: relative;
-    background-color: transparent;
-    width: 600px;
-    height: 550px;
+    background-color:transparent;
+    width: 400px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,8 +26,9 @@
     border: 5px thistle;
     border-style: ridge;
     box-shadow:0px 0px 40px 0px rgba(224, 59, 59, 0.26) ;
- }
- .fa-user-plus{
+    
+}
+.fa-user{
     position: absolute;
     top: 0;
     left:50%;
@@ -39,59 +38,54 @@
     font-size: 30px;
     padding: 30px;
     border-radius: 5rem;
- }
+}
+.input-group{
+    position:relative;
+    display: flex; 
+    align-items: center;
+    margin: 30px 0;
 
- .input-group{
-   position:relative;
-   display: flex; 
-   align-items: center;
-   margin: 30px 0;
-   margin-right: 5rem;
- }
- .input-group label{
-    flex-basis: 60%;
+   
+}
+.input-group label{
+    flex-basis: 30%;
     color: white;
+    margin-left: 10px;
+    padding: 0 20px;
 }
 .input-group input{
-    background: transparent;
-    border: none;
+    width: 15rem;
+    height: 20px;
+    border: 0;
     outline: 0;
     border-bottom: 1px solid #999;
     color: #ffffff;
     font-weight: 500;
     font-size: 16px;
-}
-::placeholder{
-    font-size: 12px;
-    color: #b9b8b8;
-    font-weight: 300;
-    text-align: center;
+    background-color: transparent;
 }
 .forgot{
-   color: rgb(142, 142, 142);
-   display: flex;
-   font-size: 14px;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   word-spacing: 2px;
-   letter-spacing: 1px;
-   margin-left: 1rem;
-  margin-bottom: 10px;
+    padding-left: 3rem;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
 }
 .forgot a{
-   margin-left: 5rem;
-   text-decoration: none;
+    margin-left: 5rem;
+    font-style: italic;
+    text-decoration: none;
 }
 .forgot a:hover{
-  color: tomato;
-  text-decoration: underline;
+    color: rgb(212, 255, 0);
+    transition: 1ms ease;
 }
-
 form button{
     position:relative;
     width: 30%;
     padding: 8px 0;
     margin-left: 9rem;
-    margin-top: 10px;
+    margin-top: 2.7rem;
     background-color:tomato;
     color: white;
     font-weight: 600;
@@ -106,25 +100,16 @@ form button{
     background-color:rgb(253, 38, 0);
     cursor: pointer;
  }
- .login{
+ .sign-up{
     text-align: center;
-    margin-top: 1rem;
-    color: white;
+    margin-top: 2rem;
+    color: rgb(255, 255, 255);
  }
 
- .login a{
+ .sign-up a{
     text-decoration: none;
  }
- .login a:hover{
+ .sign-up a:hover{
     color: tomato;
     transition: 1ms ease;
-    text-decoration:underline;
  }
-
- form span{
-   color: rgb(162, 0, 0);
-   font-size: 13px;
-   font-weight: 100;
-   font-family: Arial, 'Times New Roman', sans-serif;
- }
-

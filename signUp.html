@@ -12,21 +12,26 @@
     <div id="box">
     <div class="result"></div>
       <form>
-        <p id="fNameComment" style="color: red"></p>
-        <input type="text" placeholder="Firstname" id="fName" class="rectangle" /><br />
-        <p id="lNameComment" style="color: red"></p>
-        <input type="text" placeholder="Lastname" id="lName" class="rectangle" /><br />
-        <p id="emailComment" style="color: red"></p>
-        <input type="email" placeholder="Email" id="email" class="rectangle" /><br />
-        <p id="passwordComment" style="color: red"></p>
+        <p id="fNameError" style="color: red"></p>
+        <input type="text" placeholder="Firstname" id="fName" class="rectangle" onkeyup="validatefName()" /><br />
+
+        <p id="lNameError" style="color: red"></p>
+        <input type="text" placeholder="Lastname" id="lName" class="rectangle"  onkeyup="validatelName()"/><br />
+
+        <p id="emailError" style="color: red"></p>
+        <input type="email" placeholder="Email" id="email" class="rectangle" onkeyup="validateemail()"/><br />
+
+        <p id="passwordError" style="color: red"></p>
         <input
           type="password"
           placeholder="Password"
           id="pswd"
           class="rectangle"
+          onkeyup="validatePassword()"
         /><br />
         <p class="text">By clicking signup, i agree to your terms</p>
-        <div id="btn"><button class="button">SIGN UP</button></div>
+        <div id="btn" onkeyup="validatebutton()"><button class="button">SIGN UP</button></div>
+        <p id="buttonError" style="color: red"></p>
         <div class="follow">
           <p class="followUs">
             follow us:

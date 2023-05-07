@@ -16,8 +16,70 @@ let lName = document.getElementById("lName");
 let email = document.getElementById("email");
 let password = document.querySelector("#pswd");
 let button = document.querySelector(".button");
-let errorMessage = document.getElementById("comment");
-let answerDiv = document.querySelector(".result")
+// let errorMessage = document.getElementById("comment");
+// let answerDiv = document.querySelector(".result")
+
+
+let fNameError=document.getElementById('fNameError');
+let lNameError=document.getElementById('lNameError');
+let emailError=document.getElementById('emailError');
+let passwordError=document.getElementById('passwordError');
+let buttonError=document.getElementById('buttonError')
+
+/*****************************validating the firstName***********************************/
+function validatefName(){
+let firstName=document.getElementById('fName').value;
+if(firstName.length === 0){
+ fNameError.innerHTML='firstName is required '
+ return false;
+}
+if(!firstName.match(/^[A-za-z]*\s{1}[A-za-z]$/)){
+  fNameError.innerHTML='only letters!';
+  return false;
+}
+fNameError.innerHTML='<i class="fa-solid fa-circle-check" style="color: #38a90f;"></i>'
+return true;
+}
+
+
+/*****************************validating the lastName***********************************/
+
+function validatelName(){
+let lastName=document.getElementById('lName').value;
+if(lastName.length === 0){
+lNameError.innerHTML='lastName is required'
+}
+}
+
+/*****************************validating the Email***********************************/
+
+function validateemail(){
+let Email=document.getElementById('email').value;
+if(Email.length===0){
+  emailError.innerHTML='email is required'
+}
+
+}
+
+/*****************************validating the password***********************************/
+
+function validatePassword(){
+  let password=document.getElementById('pswd').value;
+  if(password.length===0){
+    passwordError.innerHTML='password is required'
+  }
+}
+
+/*****************************validating the button***********************************/
+
+function validatebutton(){
+let button=document.getElementById('btn')
+if(password.length===0 || Email.length===0 || lastName.length === 0|| firstName.length === 0 )
+{
+  buttonError.innerhtml='please fix error!'
+}
+}
+
 
 
 // console.log(fName);
@@ -57,10 +119,10 @@ const user = {
 0||1=1
 */
 // rex
-if(email.value === ''){
-    // alert("input email");
-  return errorMessage.innerHTML = "email required";
-}
+// if(email.value === ''){
+//     // alert("input email");
+//   return errorMessage.innerHTML = "email required";
+// }
 // if(email.value === '' || password.value === ''){
 //     return alert("input email or password");
 // }
@@ -70,9 +132,9 @@ array.push(user);
 // console.log("array:", array);
 localStorage.setItem("users", JSON.stringify(array));
 let paragraph = document.createElement('p');
-paragraph.innerHTML = 'thank you..........';
-answerDiv.appendChild(paragraph);
-errorMessage.innerHTML = '';
+// paragraph.innerHTML = 'thank you..........';
+// answerDiv.appendChild(paragraph);
+// errorMessage.innerHTML = '';
 })
 
 
